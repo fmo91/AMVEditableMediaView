@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AMVEditableMediaView_Example' do
+  pod 'AMVEditableMediaView', :path => '../'
+
+  target 'AMVEditableMediaView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
