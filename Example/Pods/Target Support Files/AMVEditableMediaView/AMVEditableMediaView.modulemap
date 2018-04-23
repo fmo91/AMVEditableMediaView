@@ -1,0 +1,6 @@
+framework module AMVEditableMediaView {
+  umbrella header "AMVEditableMediaView-umbrella.h"
+
+  export *
+  module * { export * }
+}

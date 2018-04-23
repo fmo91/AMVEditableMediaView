@@ -1,0 +1,6 @@
+framework module Pods_AMVEditableMediaView_Example {
+  umbrella header "Pods-AMVEditableMediaView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AMVEditableMediaView",
+  "version": "0.1.0",
+  "summary": "A short description of AMVEditableMediaView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zorroseph/AMVEditableMediaView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zorroseph": "zorroseph@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/zorroseph/AMVEditableMediaView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AMVEditableMediaView/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AMVEditableMediaView (0.1.0)
+
+DEPENDENCIES:
+  - AMVEditableMediaView (from `../`)
+
+EXTERNAL SOURCES:
+  AMVEditableMediaView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMVEditableMediaView: b4d520292e5349300e030f1bffb82d5e2ca80072
+
+PODFILE CHECKSUM: 9952c2e66dc1a1801f69886909112148ac107572
+
+COCOAPODS: 1.5.0
