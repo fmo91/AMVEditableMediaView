@@ -12,6 +12,7 @@
 		35564F9BE189A57E8A87D2315CCCCD23 /* Pods-AMVEditableMediaView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B96A3C62275233726EBE0FDFA144D20D /* Pods-AMVEditableMediaView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37A9F8FCAA0E48ECD7306C1239F67470 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE9734FF2218B7FEB298A66A31B782 /* ReplaceMe.swift */; };
 		5A5132F8626CB3CF841DD705CF79973C /* Pods-AMVEditableMediaView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F82C66B090F8EB005091627A752581 /* Pods-AMVEditableMediaView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		840CC5F3208FCDB8006E259F /* AMVEditableMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */; };
 		88A59603D3E3A58AADD091BC527496D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B56CAAA7DFFD7A4D91FFB30566628D73 /* AMVEditableMediaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E046350A50870E9800BC3B1D91B518C /* AMVEditableMediaView-dummy.m */; };
 		BE98F223C81FBA68C49E4158394A10A5 /* AMVEditableMediaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A2D6EFF58D74214A1F200DC1E45CE1 /* AMVEditableMediaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,7 +43,7 @@
 		16E9C7BE53021A78ECC9D83D5CD8E14F /* Pods-AMVEditableMediaView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMVEditableMediaView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3927455A4110EB70F78F9C59945CC9C3 /* Pods-AMVEditableMediaView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3E046350A50870E9800BC3B1D91B518C /* AMVEditableMediaView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMVEditableMediaView-dummy.m"; sourceTree = "<group>"; };
-		4A2526ECCBEF26D2951E074F980F0D65 /* AMVEditableMediaView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AMVEditableMediaView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A2526ECCBEF26D2951E074F980F0D65 /* AMVEditableMediaView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AMVEditableMediaView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4FDD46A710D90C71226F72A78AC6157F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A2D6EFF58D74214A1F200DC1E45CE1 /* AMVEditableMediaView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMVEditableMediaView-umbrella.h"; sourceTree = "<group>"; };
 		5A9C3FB5A4387304D721A5800B23469A /* Pods-AMVEditableMediaView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -50,14 +51,16 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68F0B665C948A77959110B6F45911593 /* Pods-AMVEditableMediaView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMVEditableMediaView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		701CD69D28E2F1C9AE6CE7ACA71521C5 /* Pods-AMVEditableMediaView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMVEditableMediaView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		714D41B42E9D42F7CFBF608BDBC05970 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		714D41B42E9D42F7CFBF608BDBC05970 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7441987B9B270E764D05EB52805ABF05 /* Pods-AMVEditableMediaView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Tests-resources.sh"; sourceTree = "<group>"; };
+		840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMVEditableMediaViewController.swift; sourceTree = "<group>"; };
+		840CC5F2208FCDB8006E259F /* AMVEditableMediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMVEditableMediaViewController.xib; sourceTree = "<group>"; };
 		8466EF918586B6DF7C33C70C61EEF12B /* Pods-AMVEditableMediaView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMVEditableMediaView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		86EAE296FD47ADF24D64FF8437339084 /* AMVEditableMediaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMVEditableMediaView.framework; path = AMVEditableMediaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F93EFC32FA5D78AD77FEAA7277E6D7 /* Pods_AMVEditableMediaView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMVEditableMediaView_Tests.framework; path = "Pods-AMVEditableMediaView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EAE296FD47ADF24D64FF8437339084 /* AMVEditableMediaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMVEditableMediaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F93EFC32FA5D78AD77FEAA7277E6D7 /* Pods_AMVEditableMediaView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMVEditableMediaView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CCCE67F960153EA519608502007489 /* AMVEditableMediaView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMVEditableMediaView.xcconfig; sourceTree = "<group>"; };
 		91B2A198F770F37C6382F4AED6505F76 /* Pods-AMVEditableMediaView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMVEditableMediaView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F46C9A8C6FC54BA90661FA4EF01F2A9 /* Pods-AMVEditableMediaView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMVEditableMediaView_Example-dummy.m"; sourceTree = "<group>"; };
 		A0AABB5D37CAF8CC7C93816D3EE28BD8 /* Pods-AMVEditableMediaView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Example-resources.sh"; sourceTree = "<group>"; };
 		A5FB6299128C36A9FF44EA3C10E640C6 /* Pods-AMVEditableMediaView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMVEditableMediaView_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -66,8 +69,8 @@
 		B96A3C62275233726EBE0FDFA144D20D /* Pods-AMVEditableMediaView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMVEditableMediaView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BF06438259DD8524BE32C826F5379783 /* Pods-AMVEditableMediaView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMVEditableMediaView_Example.modulemap"; sourceTree = "<group>"; };
 		C6AE9734FF2218B7FEB298A66A31B782 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AMVEditableMediaView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		C6BE5A6E6D4898AF6C831B7445848690 /* Pods_AMVEditableMediaView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMVEditableMediaView_Example.framework; path = "Pods-AMVEditableMediaView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D64A57C7BD85DD0EB95E1F74120B1CE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C6BE5A6E6D4898AF6C831B7445848690 /* Pods_AMVEditableMediaView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMVEditableMediaView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64A57C7BD85DD0EB95E1F74120B1CE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D89581D88062E288960939D01D804879 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0137D670F870C17A3BADF47B83A9C89 /* Pods-AMVEditableMediaView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMVEditableMediaView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E201F9E23BFF587A495B11AE445F3265 /* AMVEditableMediaView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMVEditableMediaView-prefix.pch"; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		A4AE8530B46DC639CAA4D4D179598677 /* AMVEditableMediaView */ = {
 			isa = PBXGroup;
 			children = (
+				840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */,
+				840CC5F2208FCDB8006E259F /* AMVEditableMediaViewController.xib */,
 				C6AE9734FF2218B7FEB298A66A31B782 /* ReplaceMe.swift */,
 				BC442F789D0856965E320136DC724347 /* Pod */,
 				ADF5EFBB4BD3794A141F15538F786085 /* Support Files */,
@@ -352,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56CAAA7DFFD7A4D91FFB30566628D73 /* AMVEditableMediaView-dummy.m in Sources */,
+				840CC5F3208FCDB8006E259F /* AMVEditableMediaViewController.swift in Sources */,
 				37A9F8FCAA0E48ECD7306C1239F67470 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

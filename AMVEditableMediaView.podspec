@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AMVEditableMediaView/Classes/**/*'
+  s.resource_bundles = { 'Resources' => ['./**/*.{xib,xcassets}'] }
   
   # s.resource_bundles = {
   #   'AMVEditableMediaView' => ['AMVEditableMediaView/Assets/*.png']
