@@ -15,8 +15,8 @@ public class AMVEditableMediaViewController: UIViewController {
     }
     
     public init() {
-        let bundle = Bundle(for: AMVEditableMediaViewController.self)
-        super.init(nibName: "AMVEditableMediaViewController", bundle: bundle)
+//        let bundle = Bundle(for: AMVEditableMediaViewController.self)
+        super.init(nibName: "AMVEditableMediaViewController", bundle: AMVBundle.getBundle())
     }
     
     public required init?(coder aDecoder: NSCoder) {

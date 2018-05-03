@@ -13,6 +13,7 @@
 		37A9F8FCAA0E48ECD7306C1239F67470 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE9734FF2218B7FEB298A66A31B782 /* ReplaceMe.swift */; };
 		5A5132F8626CB3CF841DD705CF79973C /* Pods-AMVEditableMediaView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F82C66B090F8EB005091627A752581 /* Pods-AMVEditableMediaView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		840CC5F3208FCDB8006E259F /* AMVEditableMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */; };
+		84B4C70C209BA51E0008A232 /* AMVBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4C70B209BA51E0008A232 /* AMVBundle.swift */; };
 		88A59603D3E3A58AADD091BC527496D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B56CAAA7DFFD7A4D91FFB30566628D73 /* AMVEditableMediaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E046350A50870E9800BC3B1D91B518C /* AMVEditableMediaView-dummy.m */; };
 		BE98F223C81FBA68C49E4158394A10A5 /* AMVEditableMediaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A2D6EFF58D74214A1F200DC1E45CE1 /* AMVEditableMediaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,8 +55,9 @@
 		714D41B42E9D42F7CFBF608BDBC05970 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7441987B9B270E764D05EB52805ABF05 /* Pods-AMVEditableMediaView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Tests-resources.sh"; sourceTree = "<group>"; };
 		840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMVEditableMediaViewController.swift; sourceTree = "<group>"; };
-		840CC5F2208FCDB8006E259F /* AMVEditableMediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMVEditableMediaViewController.xib; sourceTree = "<group>"; };
 		8466EF918586B6DF7C33C70C61EEF12B /* Pods-AMVEditableMediaView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMVEditableMediaView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		84B4C70B209BA51E0008A232 /* AMVBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMVBundle.swift; sourceTree = "<group>"; };
+		84B4C70D209BA6DE0008A232 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AMVEditableMediaViewController.xib; sourceTree = "<group>"; };
 		86EAE296FD47ADF24D64FF8437339084 /* AMVEditableMediaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMVEditableMediaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F93EFC32FA5D78AD77FEAA7277E6D7 /* Pods_AMVEditableMediaView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMVEditableMediaView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CCCE67F960153EA519608502007489 /* AMVEditableMediaView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMVEditableMediaView.xcconfig; sourceTree = "<group>"; };
@@ -156,8 +158,9 @@
 		A4AE8530B46DC639CAA4D4D179598677 /* AMVEditableMediaView */ = {
 			isa = PBXGroup;
 			children = (
+				84B4C70B209BA51E0008A232 /* AMVBundle.swift */,
 				840CC5F1208FCDB8006E259F /* AMVEditableMediaViewController.swift */,
-				840CC5F2208FCDB8006E259F /* AMVEditableMediaViewController.xib */,
+				84B4C70E209BA6DE0008A232 /* AMVEditableMediaViewController.xib */,
 				C6AE9734FF2218B7FEB298A66A31B782 /* ReplaceMe.swift */,
 				BC442F789D0856965E320136DC724347 /* Pod */,
 				ADF5EFBB4BD3794A141F15538F786085 /* Support Files */,
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B4C70C209BA51E0008A232 /* AMVBundle.swift in Sources */,
 				B56CAAA7DFFD7A4D91FFB30566628D73 /* AMVEditableMediaView-dummy.m in Sources */,
 				840CC5F3208FCDB8006E259F /* AMVEditableMediaViewController.swift in Sources */,
 				37A9F8FCAA0E48ECD7306C1239F67470 /* ReplaceMe.swift in Sources */,
@@ -386,6 +390,17 @@
 			targetProxy = EF544003FF64AA1A32D8D2A3C7133C50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B4C70E209BA6DE0008A232 /* AMVEditableMediaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B4C70D209BA6DE0008A232 /* en */,
+			);
+			name = AMVEditableMediaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		07AC0646931BA6EB651EA32075F6FAA4 /* Debug */ = {
