@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "AMVEditableMediaView/Classes/**/*"
+  "source_files": "AMVEditableMediaView/Classes/**/*",
+  "resource_bundles": {
+    "ResourceBundleName": [
+      "./**/*.{xib,xcassets}"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "AVFoundation"
+  ]
 }
