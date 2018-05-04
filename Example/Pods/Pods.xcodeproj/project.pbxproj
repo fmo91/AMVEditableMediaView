@@ -12,12 +12,13 @@
 		1FBB764EF610949B8F6DECC0ED85A8AE /* AMVEditableMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D780B5401AEE7F583FAD480C87B9 /* AMVEditableMediaViewController.swift */; };
 		3767FBFB4AF39819229942636A9D0E35 /* AMVEditableMediaViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6961B799488154992A29F73E16DC1C24 /* AMVEditableMediaViewController.xib */; };
 		5A5132F8626CB3CF841DD705CF79973C /* Pods-AMVEditableMediaView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA3FA66C3963B71EE826FC81418703C /* Pods-AMVEditableMediaView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6014AFA1CF47C1F9EFDBA50933C2CE1F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93C031679152396057207F4998CA701 /* ReplaceMe.swift */; };
 		6DDC85B050A05D6D8954277864D27D36 /* ResourceBundleName.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7371FCAA049AEA8302564255CB192A95 /* ResourceBundleName.bundle */; };
 		825E1F2190302F33A2B10FB2CAE2EEE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */; };
 		AD900D586677E2118866B82C5BDE5A00 /* AMVEditableMediaView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929BDFA1D86E8B63118C57F8C9D8970 /* AMVEditableMediaView-dummy.m */; };
 		D19B09E388EB6F5D49C9421DC56A2591 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3A287BB87F4D3C474EC576926A0F89 /* AVFoundation.framework */; };
 		D88BAC94F74D871EF17AD50E8E97D177 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C4BD65EEF247D4C8A723C0F18B326C /* UIKit.framework */; };
+		ED20392C209CFE150096523D /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20392A209CFE150096523D /* PhotoPreviewViewController.swift */; };
+		ED20392D209CFE150096523D /* PhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED20392B209CFE150096523D /* PhotoPreviewViewController.xib */; };
 		F49666BCC9C301E5BE6231BC3C2DE94E /* AMVEditableMediaView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 165ED81B816ED773200A8D5DA3C2987C /* AMVEditableMediaView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -63,10 +64,11 @@
 		A41F23F5EB0A4C86699B18848EE44E84 /* AMVEditableMediaView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMVEditableMediaView.modulemap; sourceTree = "<group>"; };
 		A59EEC62D0F0744BC21C9BE89B61F2EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0DB81A28849676D1A9B62D04088D2E8 /* Pods-AMVEditableMediaView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMVEditableMediaView_Example.modulemap"; sourceTree = "<group>"; };
-		B93C031679152396057207F4998CA701 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AMVEditableMediaView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDA3FA66C3963B71EE826FC81418703C /* Pods-AMVEditableMediaView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMVEditableMediaView_Example-umbrella.h"; sourceTree = "<group>"; };
 		E83E054254EE702D92357EF0DE9A2EB5 /* Pods-AMVEditableMediaView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMVEditableMediaView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ED20392A209CFE150096523D /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoPreviewViewController.swift; path = AMVEditableMediaView/Classes/PhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		ED20392B209CFE150096523D /* PhotoPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PhotoPreviewViewController.xib; path = AMVEditableMediaView/Classes/PhotoPreviewViewController.xib; sourceTree = "<group>"; };
 		F5BA577B27F42C5D8F40D1A47CEDA961 /* AMVEditableMediaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMVEditableMediaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3A287BB87F4D3C474EC576926A0F89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +195,8 @@
 			children = (
 				10B8D780B5401AEE7F583FAD480C87B9 /* AMVEditableMediaViewController.swift */,
 				6961B799488154992A29F73E16DC1C24 /* AMVEditableMediaViewController.xib */,
-				B93C031679152396057207F4998CA701 /* ReplaceMe.swift */,
+				ED20392A209CFE150096523D /* PhotoPreviewViewController.swift */,
+				ED20392B209CFE150096523D /* PhotoPreviewViewController.xib */,
 				36001856DBB7D584938E3C00FFDFDDF9 /* Pod */,
 				045CB6090799D9735A5B3903DE5D2382 /* Support Files */,
 			);
@@ -327,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED20392D209CFE150096523D /* PhotoPreviewViewController.xib in Resources */,
 				6DDC85B050A05D6D8954277864D27D36 /* ResourceBundleName.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD900D586677E2118866B82C5BDE5A00 /* AMVEditableMediaView-dummy.m in Sources */,
+				ED20392C209CFE150096523D /* PhotoPreviewViewController.swift in Sources */,
 				1FBB764EF610949B8F6DECC0ED85A8AE /* AMVEditableMediaViewController.swift in Sources */,
 				3767FBFB4AF39819229942636A9D0E35 /* AMVEditableMediaViewController.xib in Sources */,
-				6014AFA1CF47C1F9EFDBA50933C2CE1F /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

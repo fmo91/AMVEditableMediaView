@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMVEditableMediaViewController" customModule="AMVEditableMediaView" customModuleProvider="target">
             <connections>
                 <outlet property="cameraView" destination="At7-YD-55g" id="B4t-8A-UAr"/>
-                <outlet property="takedImageView" destination="mGN-Bp-uBH" id="0JA-1U-EiJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,9 +25,6 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGN-Bp-uBH">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi1-F3-6zV">
                     <rect key="frame" x="159.5" y="588.5" width="55" height="30"/>
                     <state key="normal" title="Capture"/>
@@ -58,16 +54,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="At7-YD-55g" secondAttribute="bottom" id="6Ek-XV-H28"/>
                 <constraint firstItem="Lu5-ga-Nxd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6km-xT-T4y"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BVz-dz-Jrz"/>
-                <constraint firstItem="mGN-Bp-uBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CbA-4o-Cro"/>
                 <constraint firstItem="n9P-De-SAE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="100" id="FUf-xz-ry3"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K56-cT-Xal"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L6d-bs-smp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGN-Bp-uBH" secondAttribute="bottom" id="OGJ-Gv-7AR"/>
                 <constraint firstItem="Gvj-VV-n82" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="150" id="OLi-Zl-yb4"/>
-                <constraint firstItem="mGN-Bp-uBH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xlk-fG-jf0"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cJd-Te-f2h"/>
                 <constraint firstItem="oi1-F3-6zV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="esD-m2-PWX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mGN-Bp-uBH" secondAttribute="trailing" id="hfJ-dZ-Qlh"/>
                 <constraint firstItem="Lu5-ga-Nxd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-150" id="oJK-vc-A2c"/>
                 <constraint firstItem="oi1-F3-6zV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="270" id="rNG-Tz-Xpe"/>
                 <constraint firstItem="n9P-De-SAE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="230" id="uA7-3Y-mxO"/>

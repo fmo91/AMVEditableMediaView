@@ -11,7 +11,6 @@ import AVFoundation
 public class AMVEditableMediaViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraView: UIView!
-    @IBOutlet weak var takedImageView: UIImageView!
     
     var captureSession = AVCaptureSession()
     var sessionOutput = AVCapturePhotoOutput()
@@ -22,14 +21,14 @@ public class AMVEditableMediaViewController: UIViewController, UIImagePickerCont
     var takedImage: UIImage?
     var currentVideoInput: AVCaptureDeviceInput?
 
-    public init() {
-        let bundle = Bundle(for: AMVEditableMediaViewController.self)
-        super.init(nibName: "AMVEditableMediaViewController", bundle: bundle)
-    }
-    
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         previewLayer?.frame = cameraView.bounds
+    }
+    
+    public init() {
+        let bundle = Bundle(for: AMVEditableMediaViewController.self)
+        super.init(nibName: "AMVEditableMediaViewController", bundle: bundle)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -180,9 +179,11 @@ extension AMVEditableMediaViewController: AVCapturePhotoCaptureDelegate {
             
             DispatchQueue.main.async {
                 self.captureSession.stopRunning()
-                self.takedImage = capturedImage
-                self.takedImageView.image = self.takedImage
-                self.takedImageView.isHidden = false
+                if let capturedImage = capturedImage {
+                    let photoPreviewVC = PhotoPreviewViewController(photo: capturedImage)
+                    let photoPreviewNavigationController = UINavigationController(rootViewController: photoPreviewVC)
+                    self.present(photoPreviewNavigationController, animated: true, completion: nil)
+                }
             }
         }
     }
