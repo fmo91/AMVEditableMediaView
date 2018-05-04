@@ -43,35 +43,23 @@
                         <action selector="changeCameraPressBtn" destination="-1" eventType="touchUpInside" id="ypP-wR-sq8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-ga-Nxd">
-                    <rect key="frame" x="22.5" y="318" width="30" height="30"/>
-                    <state key="normal" title="Left"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvj-VV-n82">
-                    <rect key="frame" x="319.5" y="318" width="36" height="30"/>
-                    <state key="normal" title="Right"/>
-                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="At7-YD-55g" secondAttribute="trailing" id="2jQ-Q1-wYj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="At7-YD-55g" secondAttribute="bottom" id="6Ek-XV-H28"/>
-                <constraint firstItem="Lu5-ga-Nxd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6km-xT-T4y"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BVz-dz-Jrz"/>
                 <constraint firstItem="mGN-Bp-uBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CbA-4o-Cro"/>
                 <constraint firstItem="n9P-De-SAE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="100" id="FUf-xz-ry3"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K56-cT-Xal"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L6d-bs-smp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGN-Bp-uBH" secondAttribute="bottom" id="OGJ-Gv-7AR"/>
-                <constraint firstItem="Gvj-VV-n82" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="150" id="OLi-Zl-yb4"/>
                 <constraint firstItem="mGN-Bp-uBH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xlk-fG-jf0"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cJd-Te-f2h"/>
                 <constraint firstItem="oi1-F3-6zV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="esD-m2-PWX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mGN-Bp-uBH" secondAttribute="trailing" id="hfJ-dZ-Qlh"/>
-                <constraint firstItem="Lu5-ga-Nxd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-150" id="oJK-vc-A2c"/>
                 <constraint firstItem="oi1-F3-6zV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="270" id="rNG-Tz-Xpe"/>
                 <constraint firstItem="n9P-De-SAE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="230" id="uA7-3Y-mxO"/>
-                <constraint firstItem="Gvj-VV-n82" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zh5-9l-gTi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="124.5"/>
