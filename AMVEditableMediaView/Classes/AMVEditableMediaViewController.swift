@@ -111,6 +111,33 @@ public class AMVEditableMediaViewController: UIViewController, UIImagePickerCont
             }
         }
     }
+    
+    func getCamera(byPosition position: AVCaptureDevice.Position) -> AVCaptureDevice? {
+        let deviceTypes: [AVCaptureDevice.DeviceType] = [.builtInDuoCamera, .builtInTelephotoCamera,.builtInWideAngleCamera]
+        let session = AVCaptureDevice.DiscoverySession(
+            deviceTypes: deviceTypes,
+            mediaType: AVMediaType.video,
+            position: position
+        )
+        
+        let devices = session.devices
+        for device in devices {
+            if device.position == position {
+                return device
+            }
+        }
+        return nil
+    }
+    
+    @IBAction func changeCameraPressBtn() {
+        let desiredCameraPosition = getDesiredCameraPosition(by: currentVideoInput)
+        let cameraAvailable = getCamera(byPosition: desiredCameraPosition)
+        setCamera(with: cameraAvailable)
+    }
+    
+    @IBAction func capturePressBtn() {
+        captureImage()
+    }
 }
 
 extension AMVEditableMediaViewController: AVCapturePhotoCaptureDelegate {
