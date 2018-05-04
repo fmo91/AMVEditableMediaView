@@ -13,6 +13,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Capture"
+        
         let vc = AMVEditableMediaViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
