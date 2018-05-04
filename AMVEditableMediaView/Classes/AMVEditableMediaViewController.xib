@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMVEditableMediaViewController" customModule="AMVEditableMediaView" customModuleProvider="target">
             <connections>
                 <outlet property="cameraView" destination="At7-YD-55g" id="B4t-8A-UAr"/>
+                <outlet property="takedImageView" destination="mGN-Bp-uBH" id="0JA-1U-EiJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,25 +26,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85Y-Sb-YVN" userLabel="PreviewLayer">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mGN-Bp-uBH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="At7-YD-55g" secondAttribute="trailing" id="2jQ-Q1-wYj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="At7-YD-55g" secondAttribute="bottom" id="6Ek-XV-H28"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BVz-dz-Jrz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="85Y-Sb-YVN" secondAttribute="trailing" id="CyT-65-FdE"/>
-                <constraint firstItem="85Y-Sb-YVN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CzW-7T-VxY"/>
+                <constraint firstItem="mGN-Bp-uBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CbA-4o-Cro"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K56-cT-Xal"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L6d-bs-smp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="85Y-Sb-YVN" secondAttribute="bottom" id="S8I-6N-PEW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mGN-Bp-uBH" secondAttribute="bottom" id="OGJ-Gv-7AR"/>
+                <constraint firstItem="mGN-Bp-uBH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xlk-fG-jf0"/>
                 <constraint firstItem="At7-YD-55g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cJd-Te-f2h"/>
-                <constraint firstItem="85Y-Sb-YVN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rCE-8h-5Wr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mGN-Bp-uBH" secondAttribute="trailing" id="hfJ-dZ-Qlh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="124.5"/>
         </view>
     </objects>
 </document>

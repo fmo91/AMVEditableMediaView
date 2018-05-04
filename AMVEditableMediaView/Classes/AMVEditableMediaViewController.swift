@@ -8,9 +8,10 @@
 import UIKit
 import AVFoundation
 
-public class AMVEditableMediaViewController: UIViewController, UIImagePickerControllerDelegate {
+public class AMVEditableMediaViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraView: UIView!
+    @IBOutlet weak var takedImageView: UIImageView!
     
     var captureSession = AVCaptureSession()
     var sessionOutput = AVCapturePhotoOutput()
@@ -28,11 +29,10 @@ public class AMVEditableMediaViewController: UIViewController, UIImagePickerCont
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //previewLayer?.frame = cameraView.bounds
+        previewLayer?.frame = cameraView.bounds
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -154,8 +154,8 @@ extension AMVEditableMediaViewController: AVCapturePhotoCaptureDelegate {
             DispatchQueue.main.async {
                 self.captureSession.stopRunning()
                 self.takedImage = capturedImage
-//                self.takedImageView.image = self.takedImage
-//                self.imageShowView.isHidden = false
+                self.takedImageView.image = self.takedImage
+                self.takedImageView.isHidden = false
             }
         }
     }
